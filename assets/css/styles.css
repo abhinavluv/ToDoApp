@@ -1,0 +1,191 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: #333;
+    color: #fff;
+}
+
+h1 {
+    margin: 40px;
+    text-align: center;
+}
+
+#card {
+    width: 600px;
+    margin: auto;
+    border: 1px solid #ff502f;
+    border-radius: 10px;
+}
+
+hr {
+    border:  .2px solid #ff502f;
+    width: 600px;
+    margin: 5px 0;
+}
+
+label {
+    display: block;
+    padding: 10px 10px;
+}
+
+input {
+    border: none;
+    background: none;
+    font-size: 1rem;
+    padding: 5px 10px;
+    color: #ff502f;
+    width: 100%;
+}
+
+#category-date td {
+    width: 25rem;
+}
+
+
+input[type="date"] {
+    font-size: 1.1rem;
+}
+
+input[type="date"]:hover {
+    color: #ff502f;
+    background: none;
+}
+
+input[type="text"]:after {
+    border-bottom: 1px solid #fff;
+}
+
+input:focus {
+    outline: none;
+}
+
+
+td {
+    padding: 0 10px;
+    width: 200px;
+}
+
+select {
+    background: none;
+    /*font-size: 1rem;*/
+    border: none;
+    color: #ff502f;
+    width: 100%;
+}
+
+select:focus {
+    outline: none;
+}
+
+.buttons {
+    margin: 0 25%;
+}
+
+button {
+    padding: 8px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+}
+
+#addtask i,
+#deletetask i {
+    padding-right: 5px;
+}
+
+#addtask {
+    background: greenyellow;
+    width: 50%;
+    font-weight: bold;
+}
+
+#deletetask {
+    background: orangered;
+    color: #fff;
+    padding: 8px;
+}
+
+#addtask:focus,
+#deletetask:focus {
+    outline: none;
+}
+
+#addtask:hover {
+    background: #33ff85;
+}
+
+#deletetask:hover {
+    background: #ff845d;
+}
+
+#result {
+    margin: 10px 0;
+}
+
+#result-duedate {
+    display: block;
+    font-size: .7rem;
+    color: #ff502f;
+    padding: 10px 0;
+}
+
+#result label {
+    text-align: center;
+    border-radius: 5px;
+    /*width: 100px;*/
+    font-size: .8rem;
+    letter-spacing: .3rem;
+}
+
+.todo-list {
+    display: flex;
+    padding: 3px 0;
+    align-items: center;
+    /*width: 100%;*/
+}
+
+
+.todo-list #content {
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    /*align-items: flex-start;*/
+}
+
+#work {
+    background: white;
+    color: black;
+}
+
+#personal {
+    background: lightskyblue;
+    color: white;
+}
+
+#other {
+    background: bisque;
+    color: #333333;
+}
+
+#bank {
+    background: #ff7665;
+    color: white;
+}
+
+#home {
+    background: #a2ffab;
+    color: #333;
+}
+
+#choose
+
+
+
+
+
+

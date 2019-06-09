@@ -6,12 +6,57 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css">
     <title>Home | <%= title %></title>
 </head>
 <body>
     <h1><%= title %></h1>
 
+    <form action="/" method="post">
+        <div id="card">
+            <label for="description">Description</label>
+            <input type="text" name="description" id="description" placeholder="What do you need to do...">
+            <hr>
+            <table id="category-date">
+                <tr>
+                    <td>
+                        <label for="category">Category</label>
+                        <select name="categories" id="categories">
+                            <option value="" selected>Choose a Category</option>
+                            <option value="personal">Personal</option>
+                            <option value="work">Work</option>
+                            <option value="home">Home</option>
+                            <option value="bank">Bank</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </td>
+                    <td>
+                        <label for="duedate">Due Date</label>
+                        <input type="date" id="duedate" name="duedate">
+                    </td>
+                </tr>
+            </table>
+            <hr>
+            <span class="buttons">
+                <button type="submit" id="addtask" formaction="/addtask">
+                    <span><i class="fas fa-plus"></i></span>
+                    Add Task
+                </button>
+            </span>
+            <hr>
+            <table id="result">
+                <% tasks.forEach(function(task) { %>
+                    <tr class="todo-list">
+                        <td><button type="submit" id="deletetask" formaction="deletetask/<%= task._id %>"><span><i class="fas fa-times"></i></span>
+                                                    Delete Task</button></td>
+                        <td id="content"><%= task.description %> <span id="result-duedate"><i class="fas fa-calendar-alt"></i> <%= moment(task.duedate).format('MMM DD, YYYY') %></span> </td>
+                        <td><label id="<%= task.categories %>"><%= task.categories %></label></td>
+                    </tr>
+
+                <% }); %>
+            </table>
+        </div>
+    </form>
     <script src="https://kit.fontawesome.com/d319133fa0.js"></script>
 </body>
 </html>
