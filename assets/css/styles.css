@@ -17,13 +17,13 @@ h1 {
 
 #card {
     width: 600px;
-    margin: auto;
+    margin:  50px auto;
     border: 1px solid #ff502f;
     border-radius: 10px;
 }
 
 hr {
-    border:  .2px solid #ff502f;
+    border:  0.4px solid #ff502f;
     width: 600px;
     margin: 5px 0;
 }
@@ -46,14 +46,10 @@ input {
     width: 25rem;
 }
 
-
 input[type="date"] {
     font-size: 1.1rem;
-}
-
-input[type="date"]:hover {
-    color: #ff502f;
-    background: none;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
 }
 
 input[type="text"]:after {
