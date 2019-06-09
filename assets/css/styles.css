@@ -130,6 +130,10 @@ button {
     padding: 10px 0;
 }
 
+.fa-calendar-alt {
+    padding-right: 5px;
+}
+
 #result label {
     text-align: center;
     border-radius: 5px;
