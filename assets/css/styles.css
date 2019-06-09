@@ -11,13 +11,13 @@ body {
 }
 
 h1 {
-    margin: 40px;
+    margin:  40px;
     text-align: center;
 }
 
 #card {
     width: 600px;
-    margin:  50px auto;
+    margin:  30px auto;
     border: 1px solid #ff502f;
     border-radius: 10px;
 }
