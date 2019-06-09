@@ -32,8 +32,10 @@ module.exports.addtask = function(request, response) {
     }
 
     // if user has filled past due date, he/she cannot proceed
-    if(moment(request.body.duedate).isBefore(moment(Date.now()))) {
-        console.log("Select future date");
+    // found difference between today and duedate. if number of days is less than 0 > cannot proceed
+    if(moment(request.body.duedate).diff(moment(Date.now()), 'days') < 0) {
+        const dateDifference = moment(request.body.duedate).diff(moment(Date.now()), 'days');
+        console.log("Select future date... Date difference: ", dateDifference, "days.");
         return response.redirect('back');
     }
 
